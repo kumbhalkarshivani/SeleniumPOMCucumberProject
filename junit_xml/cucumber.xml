@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.931">
+    <testcase classname="End to End workflow to verify the final cost of the product" name="To verify the final cost of the product" time="3.749">
+        <system-out>
+            <![CDATA[Given Navigate to base URL "https://www.saucedemo.com/".....................passed
+And Login to application with below credentials.............................passed
+Given Add below list of products in the cart................................passed
+When Open cart..............................................................passed
+And Check products count in the cart........................................passed
+And Click on checkout.......................................................passed
+And Add check out info......................................................passed
+And click on continue.......................................................passed
+Then Check Item total of the Products.......................................passed
+And Check Total Price.......................................................passed
+And Click on Finish.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

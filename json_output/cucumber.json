@@ -1,0 +1,259 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 598788200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "Navigate to base URL \"https://www.saucedemo.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.saucedemo.com/\"",
+                  "offset": 21
+                }
+              ],
+              "location": "stepDefinations.EndToEndTestSteps.navigateToBaseURL(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 343597200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Login to application with below credentials",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.login_to_application_with_below_credentials(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "standard_user",
+                  "secret_sauce"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-07-21T11:01:42.945Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2999100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1473396200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "To verify the final cost of the product",
+        "description": "",
+        "id": "end-to-end-workflow-to-verify-the-final-cost-of-the-product;to-verify-the-final-cost-of-the-product",
+        "after": [
+          {
+            "result": {
+              "duration": 166570500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinations.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 401051600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Add below list of products in the cart",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.addBelowListOfProductsInTheCart(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Products"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Backpack"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Onesie"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 101627500,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Open cart",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.open_cart()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 26985500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Check products count in the cart",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.check_products_count_in_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61515700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Click on checkout",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.click_on_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 269073300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Add check out info",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.add_check_out_info(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "firstname",
+                  "lastname",
+                  "zip"
+                ]
+              },
+              {
+                "cells": [
+                  "firsttest",
+                  "lasttest",
+                  "90209"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 81769100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click on continue",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.clickOnContinue()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 32992300,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Check Item total of the Products",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.check_of_the_products()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 53503100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Check Total Price",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.check()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66297500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click on Finish",
+            "match": {
+              "location": "stepDefinations.EndToEndTestSteps.click_on_finish()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "End to End workflow to verify the final cost of the product",
+    "description": "",
+    "id": "end-to-end-workflow-to-verify-the-final-cost-of-the-product",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/EndToEndWorkFlow.feature",
+    "tags": []
+  }
+]
