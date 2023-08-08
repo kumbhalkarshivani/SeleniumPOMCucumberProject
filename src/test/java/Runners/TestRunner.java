@@ -8,9 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/EndToEndWorkFlow.feature",
         glue = {"stepDefinations", "ApplicationHooks"},
-        plugin= {"pretty","html:test-outout", "json:json_output/cucumber.json"
+        plugin= {"pretty","json:json_output/cucumber.json"
                 , "junit:junit_xml/cucumber.xml",
                 "html:target/cucumber-reports.html"},
+        publish = true,
         monochrome = false,
         dryRun = false
 )
